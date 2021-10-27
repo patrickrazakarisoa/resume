@@ -1,0 +1,296 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin divBig() {
+     height: auto;
+     width: 90%;
+     min-width: 300px;
+     margin: auto;
+     margin-top: 2em;
+     margin-bottom: 2em;
+     padding: 2em;
+}
+
+
+body{
+     background: url("../img/white.jpg") repeat fixed 100%;
+     transition: all 1s ease-in-out;
+     margin-top: 4em;
+}
+
+
+.background{
+     cursor: pointer;
+     width: 30px;
+     height: 30px; 
+     border-radius: 50%;
+     box-shadow: 0px 0px 50px 10px rgb(182, 180, 180);
+}
+
+i {
+     font-size: 2em;
+}
+
+.navbar:hover {
+     background: rgb(240, 240, 240);
+     opacity: 1;
+}
+
+.navbar{
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: rgb(240, 240, 240);
+     opacity: 0.5;
+     width: 100%;
+     min-width: 300px;
+     background: rgb(240, 240, 240);
+     height: 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content:space-evenly;
+     align-items: center;
+     list-style: none;
+     transition: all 0.5s ease-in-out;
+     box-shadow: 0px 0px 20px 5px rgb(99, 99, 99);
+
+    
+
+     .nav-link {
+          color: rgb(50, 50, 50);
+     }
+
+     li{
+          text-transform: uppercase;
+          margin: 10px;
+          cursor: pointer;
+
+          a{   
+               text-decoration: none;
+               color: wheat;
+          }
+
+          a:hover{
+               color: rgb(67, 173, 179);
+               font-weight: 500;
+          }
+     }
+}
+
+.bonjour {
+     h1{
+          margin-top: 1em;;
+          text-align: center
+     }
+}
+
+.divHeader {
+     background: white;
+     margin-top: -10em;
+     height: auto;
+     transition: all 1.5s ease-in-out;    
+     
+     .patrick{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          margin-top: 4em;
+          margin-bottom: 1em;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 3em;
+          transition: font-family 1s;     
+     }
+     
+     .moi {
+          margin: auto;
+          margin-bottom: 5%;
+          margin-top: 5%;
+          min-height: 300px;
+          min-width: 300px;
+          border-radius: 50%;
+          background-image: url("../img/moi.jpg"); 
+          background-position: center; 
+          background-repeat: no-repeat;   
+          box-shadow: inset 0px 0px 20px 0px rgb(130, 130, 130),
+                            0px 0px 50px 5px rgba(196, 196, 196, 0.8), 
+                      
+     }
+
+     h2 {
+          text-align: center;
+          margin-bottom: 1%;
+     }
+
+     .cv {
+          font-size: 1.3em;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          margin-bottom: 5%;
+     }
+}
+
+
+
+.divPresentation{
+
+     @include divBig();
+     border: none;
+     border-radius: 10px;
+     transition: border-radius 1s;
+     box-shadow: inset 0px 0px 10px 5px rgb(216, 216, 216);
+
+     h1{
+          text-align: center;
+          font-size: 2em;
+          margin-top: 2em;
+          margin-bottom: 2em;
+     }
+}
+
+.flexMe {
+     display: flex;
+     flex-direction: column;
+}
+
+.skills {
+     display: flex; 
+     flex-direction:row ; 
+     flex-wrap:wrap; 
+     justify-content:space-evenly; 
+     align-items:center;
+
+     img {
+          max-width: 10em;
+          max-height: 10em;
+          margin: 2em;
+          padding: 1em;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+               max-width: 17em;
+               max-height: 17em;
+               margin: -1.5em;
+          }
+     }
+}
+
+.grid {
+
+     height: auto;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     grid-template-areas:
+     "projet1 ."
+     ". projet2"
+     "projet3 ."
+     ". projet4"
+     "projet5 ."
+     ". projet6" ;
+     grid-gap: 10px;
+
+     div {
+          border: wheat solid;
+          padding: 2em;
+          text-align: center;
+
+          &:nth-child(even) {
+               background-color: rgb(121, 55, 55);
+          }
+     
+          &:nth-child(odd) {
+               background-color: steelblue;
+          }
+     }
+
+     .projet1 {
+         grid-area: projet1;
+     }
+
+     .projet2 {
+          grid-area: projet2;
+     }
+
+     .projet3 {
+          grid-area: projet3;
+     }
+
+     .projet4 {
+          grid-area: projet4;
+     }
+
+     .projet5 {
+          grid-area: projet5;
+     }
+
+     .projet6 {
+          grid-area: projet6;
+     }
+}
+
+.flexadress {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     list-style: none;
+}
+
+.flexlink {
+     margin: 5em 0em;
+     display: flex;
+     justify-content:space-around;
+     list-style: none;
+
+     i{
+          font-size: 3em;
+          color: black
+     }
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+     body{
+          margin-top: 0em;
+     }
+
+     @mixin divBig() {
+          height: auto;
+          width: 90%;
+          min-width: 300px;
+          margin: auto;
+          margin-top: 2em;
+          margin-bottom: 2em;
+          padding: 2em;
+     }
+
+     .navbar{
+          position: fixed;
+          top: 38em;
+          right: 0;
+          
+     }
+
+     .divPresentation{
+          @include divBig();
+     }
+
+     .grid {
+          grid-template-areas:
+          "projet1 projet1"
+          "projet2 projet2"
+          "projet3 projet3"
+          "projet4 projet4"
+          "projet5 projet5"
+          "projet6 projet6";
+     }
+     
+}
+
+
+

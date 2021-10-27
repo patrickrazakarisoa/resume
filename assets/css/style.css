@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url("../img/white.jpg") repeat fixed 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  margin-top: 4em;
+}
+
+.background {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 50px 10px #b6b4b4;
+          box-shadow: 0px 0px 50px 10px #b6b4b4;
+}
+
+i {
+  font-size: 2em;
+}
+
+.navbar:hover {
+  background: #f0f0f0;
+  opacity: 1;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f0f0f0;
+  opacity: 0.5;
+  width: 100%;
+  min-width: 300px;
+  background: #f0f0f0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 20px 5px #636363;
+          box-shadow: 0px 0px 20px 5px #636363;
+}
+
+.navbar .nav-link {
+  color: #323232;
+}
+
+.navbar li {
+  text-transform: uppercase;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.navbar li a:hover {
+  color: #43adb3;
+  font-weight: 500;
+}
+
+.bonjour h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.divHeader {
+  background: white;
+  margin-top: -10em;
+  height: auto;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.divHeader .patrick {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  -webkit-transition: font-family 1s;
+  transition: font-family 1s;
+}
+
+.divHeader .moi {
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  min-height: 300px;
+  min-width: 300px;
+  border-radius: 50%;
+  background-image: url("../img/moi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
+          box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
+}
+
+.divHeader h2 {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.divHeader .cv {
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5%;
+}
+
+.divPresentation {
+  height: auto;
+  width: 90%;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: border-radius 1s;
+  transition: border-radius 1s;
+  -webkit-box-shadow: inset 0px 0px 10px 5px #d8d8d8;
+          box-shadow: inset 0px 0px 10px 5px #d8d8d8;
+}
+
+.divPresentation h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.flexMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills img {
+  max-width: 10em;
+  max-height: 10em;
+  margin: 2em;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills img:hover {
+  max-width: 17em;
+  max-height: 17em;
+  margin: -1.5em;
+}
+
+.grid {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
+  grid-gap: 10px;
+}
+
+.grid div {
+  border: wheat solid;
+  padding: 2em;
+  text-align: center;
+}
+
+.grid div:nth-child(even) {
+  background-color: #793737;
+}
+
+.grid div:nth-child(odd) {
+  background-color: steelblue;
+}
+
+.grid .projet1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: projet1;
+}
+
+.grid .projet2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: projet2;
+}
+
+.grid .projet3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: projet3;
+}
+
+.grid .projet4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: projet4;
+}
+
+.grid .projet5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: projet5;
+}
+
+.grid .projet6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: projet6;
+}
+
+.flexadress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.flexlink {
+  margin: 5em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.flexlink i {
+  font-size: 3em;
+  color: black;
+}
+
+@media screen and (max-width: 940px) {
+  body {
+    margin-top: 0em;
+  }
+  .navbar {
+    position: fixed;
+    top: 38em;
+    right: 0;
+  }
+  .divPresentation {
+    height: auto;
+    width: 90%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+  }
+  .grid {
+        grid-template-areas: "projet1 projet1" "projet2 projet2" "projet3 projet3" "projet4 projet4" "projet5 projet5" "projet6 projet6";
+  }
+}
+/*# sourceMappingURL=style.css.map */
