@@ -19,6 +19,15 @@
           }
      }
 
+     .cv {
+          background: rgb(47, 47, 47);     
+          &:hover {
+               background: rgb(47, 47, 47);
+               box-shadow: 0px 0px 10px 2px rgb(101, 101, 101),
+                           inset 0px 0px 10px 2px rgb(101, 101, 101);
+          }
+     }
+
      .divHeader {
           background: rgb(47, 47, 47);
 
