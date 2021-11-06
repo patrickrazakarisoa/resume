@@ -19,7 +19,7 @@
 body{
      background: url("../img/white.jpg") repeat fixed 100%;
      transition: all 1s ease-in-out;
-     margin-top: 4em;
+     margin-top: 0em;
 }
 
 
@@ -35,14 +35,9 @@ i {
      font-size: 2em;
 }
 
-.navbar:hover {
-     background: rgb(240, 240, 240);
-     opacity: 1;
-}
-
 .navbar{
      position: fixed;
-     top: 0;
+     bottom: 0;
      left: 0;
      background: rgb(240, 240, 240);
      opacity: 0.5;
@@ -58,8 +53,11 @@ i {
      transition: all 0.5s ease-in-out;
      box-shadow: 0px 0px 20px 5px rgb(99, 99, 99);
 
-    
-
+     &:hover {
+          background: rgb(240, 240, 240);
+          opacity: 1;
+     }
+   
      .nav-link {
           color: rgb(50, 50, 50);
      }
@@ -80,6 +78,7 @@ i {
           }
      }
 }
+
 
 .bonjour {
      h1{
@@ -185,12 +184,12 @@ i {
      grid-template-columns: 1fr 1fr;
      grid-template-rows: 1fr 1fr 1fr 1fr;
      grid-template-areas:
-     "projet1 ."
-     ". projet2"
-     "projet3 ."
-     ". projet4"
-     "projet5 ."
-     ". projet6" ;
+     "projet1 projet1"
+     "projet2 projet2"
+     "projet3 projet3"
+     "projet4 projet4"
+     "projet5 projet5"
+     "projet6 projet6";
      grid-gap: 10px;
 
      div {
@@ -253,10 +252,10 @@ i {
 
 
 
-@media screen and (max-width: 940px) {
+@media screen and (min-width: 940px) {
 
      body{
-          margin-top: 0em;
+          margin-top: 4em;
      }
 
      @mixin divBig() {
@@ -271,9 +270,8 @@ i {
 
      .navbar{
           position: fixed;
-          top: 38em;
-          right: 0;
-          
+          top: 0;
+          left: 0;  
      }
 
      .divPresentation{
@@ -282,12 +280,12 @@ i {
 
      .grid {
           grid-template-areas:
-          "projet1 projet1"
-          "projet2 projet2"
-          "projet3 projet3"
-          "projet4 projet4"
-          "projet5 projet5"
-          "projet6 projet6";
+          "projet1 ."
+          ". projet2"
+          "projet3 ."
+          ". projet4"
+          "projet5 ."
+          ". projet6" ;
      }
      
 }
