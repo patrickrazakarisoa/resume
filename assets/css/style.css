@@ -10,7 +10,7 @@ body {
   background: url("../img/white.jpg") repeat fixed 100%;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  margin-top: 4em;
+  margin-top: 0em;
 }
 
 .background {
@@ -26,14 +26,9 @@ i {
   font-size: 2em;
 }
 
-.navbar:hover {
-  background: #f0f0f0;
-  opacity: 1;
-}
-
 .navbar {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: #f0f0f0;
   opacity: 0.5;
@@ -59,6 +54,11 @@ i {
   transition: all 0.5s ease-in-out;
   -webkit-box-shadow: 0px 0px 20px 5px #636363;
           box-shadow: 0px 0px 20px 5px #636363;
+}
+
+.navbar:hover {
+  background: #f0f0f0;
+  opacity: 1;
 }
 
 .navbar .nav-link {
@@ -206,7 +206,7 @@ i {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
+      grid-template-areas: "projet1 projet1" "projet2 projet2" "projet3 projet3" "projet4 projet4" "projet5 projet5" "projet6 projet6";
   grid-gap: 10px;
 }
 
@@ -227,36 +227,42 @@ i {
 .grid .projet1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: projet1;
 }
 
 .grid .projet2 {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: projet2;
 }
 
 .grid .projet3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: projet3;
 }
 
 .grid .projet4 {
   -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: projet4;
 }
 
 .grid .projet5 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: projet5;
 }
 
 .grid .projet6 {
   -ms-grid-row: 6;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: projet6;
 }
 
@@ -289,14 +295,14 @@ i {
   color: black;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (min-width: 940px) {
   body {
-    margin-top: 0em;
+    margin-top: 4em;
   }
   .navbar {
     position: fixed;
-    top: 38em;
-    right: 0;
+    top: 0;
+    left: 0;
   }
   .divPresentation {
     height: auto;
@@ -308,7 +314,7 @@ i {
     padding: 2em;
   }
   .grid {
-        grid-template-areas: "projet1 projet1" "projet2 projet2" "projet3 projet3" "projet4 projet4" "projet5 projet5" "projet6 projet6";
+        grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
   }
 }
 /*# sourceMappingURL=style.css.map */
