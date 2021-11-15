@@ -1,0 +1,82 @@
+body {
+  margin-top: 4em;
+}
+
+.moi {
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  min-height: 300px;
+  min-width: 300px;
+  border-radius: 50%;
+  background-image: url("../img/moi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
+          box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
+}
+
+.patrick {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  -webkit-transition: font-family 1s;
+  transition: font-family 1s;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.divPresentation {
+  height: auto;
+  width: 90%;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills img {
+  max-width: 10em;
+  max-height: 10em;
+  margin: 2em;
+  padding: 1em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills img:hover {
+  max-width: 17em;
+  max-height: 17em;
+  margin: -1.5em;
+}
+
+.grid {
+      grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
+}
+/*# sourceMappingURL=desktop.css.map */
