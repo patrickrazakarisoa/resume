@@ -124,26 +124,49 @@ i {
   margin-bottom: 1%;
 }
 
-.divHeader .cv {
-  font-size: 1.3em;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 250px;
-  min-width: 200px;
-  border-radius: 50px;
-  padding: 1%;
-  margin: auto;
-  margin-top: 75px;
-  margin-bottom: 75px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  border: 1px solid;
+.divHeader .detailsgrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.divHeader .cv:hover {
-  border: none;
+.divHeader .detailsgrid details {
+  width: 400px;
+  margin: 0em 0.5em;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.divHeader .detailsgrid details h4, .divHeader .detailsgrid details ul, .divHeader .detailsgrid details li {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #656565;
+  list-style: none;
+}
+
+.divHeader .detailsgrid details summary {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.divHeader .detailsgrid details summary:hover {
   background: white;
   -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
           box-shadow: inset 0px 0px 10px 2px #656565;
@@ -312,79 +335,34 @@ i {
   color: black;
 }
 
-@media screen and (min-width: 1040px) {
-  body {
-    margin-top: 4em;
-  }
-  .moi {
-    margin: auto;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    min-height: 300px;
-    min-width: 300px;
-    border-radius: 50%;
-    background-image: url("../img/moi.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
-            box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
-  }
-  .patrick {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 4em;
-    margin-bottom: 1em;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3em;
-    -webkit-transition: font-family 1s;
-    transition: font-family 1s;
-  }
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  .divPresentation {
-    height: auto;
-    width: 90%;
-    min-width: 300px;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding: 2em;
-  }
-  .skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .skills img {
-    max-width: 10em;
-    max-height: 10em;
-    margin: 2em;
-    padding: 1em;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .skills img:hover {
-    max-width: 17em;
-    max-height: 17em;
-    margin: -1.5em;
-  }
-  .grid {
-        grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
-  }
+.flexcv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexcv .cv {
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 250px;
+  min-width: 200px;
+  border-radius: 50px;
+  padding: 1em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border: 1px solid;
+}
+
+.flexcv .cv:hover {
+  border: 1px solid white;
+  background: white;
+  -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
+          box-shadow: inset 0px 0px 10px 2px #656565;
 }
 /*# sourceMappingURL=style.css.map */

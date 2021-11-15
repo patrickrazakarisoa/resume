@@ -123,28 +123,52 @@ i {
           margin-bottom: 1%;
      }
 
-     .cv {
-          font-size: 1.3em;
-          text-align: center;
-          text-decoration: none;
-          color: black;
-          font-family: Arial, Helvetica, sans-serif;
-          max-width: 250px;
-          min-width: 200px;
-          border-radius: 50px;
-          padding: 1%;
-          margin: auto;
-          margin-top: 75px;
-          margin-bottom: 75px;
-          transition-duration: 0.5s;
-          border: 1px solid;
+     .detailsgrid {
 
-          &:hover {
-               border: none;
-               background: white;
-               box-shadow: inset 0px 0px 10px 2px rgb(101, 101, 101);
+          display: flex;
+          justify-content:space-evenly;
+          flex-wrap: wrap;
+     
+          details{
+               width: 400px;
+               margin: 0em 0.5em;
+               padding: 1em;
+               text-align: center;
+               text-decoration: none;
+               border: 1px solid transparent;
+               border-radius: 10px;
+               transition-duration: 1s;
+     
+               h4, ul, li{
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 10px;
+                    border: 1px solid rgb(101, 101, 101);
+                    list-style: none;
+               }   
+              
+               summary{
+                    list-style: none;
+                    padding: 10px;
+                    margin: 10px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition-duration: 0.5s;
+
+                    &:hover{
+                         background: white;
+                         box-shadow: inset 0px 0px 10px 2px rgb(101, 101, 101);
+                    }
+               }
+     
+             
           }
+     
+         
+     
      }
+     
 }
 
 
@@ -265,92 +289,37 @@ i {
      }
 }
 
+.flexcv{
 
+     display: flex;
+     justify-content: center;
 
-@media screen and (min-width: 1040px) {
-
-     body{
-          margin-top: 4em;
-     }
-
-     @mixin divBig() {
-          height: auto;
-          width: 90%;
-          min-width: 300px;
-          margin: auto;
-          margin-top: 2em;
-          margin-bottom: 2em;
-          padding: 2em;
-     }
-
-     .moi {
-          margin: auto;
-          margin-bottom: 5%;
-          margin-top: 5%;
-          min-height: 300px;
-          min-width: 300px;
-          border-radius: 50%;
-          background-image: url("../img/moi.jpg"); 
-          background-position: center; 
-          background-repeat: no-repeat;   
-          box-shadow: inset 0px 0px 20px 0px rgb(130, 130, 130),
-                            0px 0px 50px 5px rgba(196, 196, 196, 0.8), 
-                      
-     }
-
-     .patrick{
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-          margin-top: 4em;
-          margin-bottom: 1em;
+     .cv {
+          font-size: 1.3em;
           text-align: center;
-          text-transform: uppercase;
-          font-size: 3em;
-          transition: font-family 1s;     
-     }
-
-     .navbar{
-          position: fixed;
-          top: 0;
-          left: 0;  
-     }
-
-     .divPresentation{
-          @include divBig();
-     }
-
-     .skills {
-          display: flex; 
-          flex-direction:row ; 
-          flex-wrap:wrap; 
-          justify-content:space-evenly; 
-          align-items:center;
+          text-decoration: none;
+          color: black;
+          font-family: Arial, Helvetica, sans-serif;
+          max-width: 250px;
+          min-width: 200px;
+          border-radius: 50px;
+          padding: 1em;
+          transition-duration: 0.5s;
+          border: 1px solid;
      
-          img {
-               max-width: 10em;
-               max-height: 10em;
-               margin: 2em;
-               padding: 1em;
-               transition: all 0.5s ease-in-out;
-     
-               &:hover {
-                    max-width: 17em;
-                    max-height: 17em;
-                    margin: -1.5em;
-               }
+          &:hover {
+               border: 1px solid white;
+               background: white;
+               box-shadow: inset 0px 0px 10px 2px rgb(101, 101, 101);
           }
      }
 
-     .grid {
-          grid-template-areas:
-          "projet1 ."
-          ". projet2"
-          "projet3 ."
-          ". projet4"
-          "projet5 ."
-          ". projet6" ;
-     }
-     
 }
+
+
+
+
+
 
 
 
