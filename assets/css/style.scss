@@ -88,6 +88,7 @@ i {
 }
 
 .divHeader {
+     
      background: white;
      margin-top: -10em;
      height: auto;
@@ -104,17 +105,16 @@ i {
      }
      
      .moi {
-          margin: auto;
-          margin-bottom: 5%;
-          margin-top: 5%;
-          min-height: 250px;
-          min-width: 250px;
-          border-radius: 50%;
-          background-image: url("../img/moi.jpg"); 
-          background-position: center; 
-          background-repeat: no-repeat;   
-          box-shadow: inset 0px 0px 20px 0px rgb(130, 130, 130),
-                            0px 0px 50px 5px rgba(196, 196, 196, 0.8), 
+
+          .imgmoi{
+               margin: auto;
+               min-height: 100px;
+               min-width: 80px;
+               border-radius: 50%;  
+               box-shadow: inset 0px 0px 5px 0px rgb(130, 130, 130),
+                            0px 0px 5px 5px rgba(196, 196, 196, 0.8), 
+
+          } 
                       
      }
 
@@ -192,6 +192,23 @@ i {
 .flexMe {
      display: flex;
      flex-direction: column;
+
+     .flexMoi{
+          display: flex;
+          flex-direction: column;
+
+          
+          .moi{
+               margin: auto;
+          }
+
+          .nom{
+               display: flex;
+               flex-direction: column;
+               margin: auto;
+               margin-bottom: 2em;
+          }
+     }
 }
 
 .skills {
