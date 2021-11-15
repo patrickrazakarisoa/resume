@@ -87,11 +87,11 @@ i {
 }
 
 .divHeader {
-  background: white;
+  background: #f8f8f8;
   margin-top: -10em;
   height: auto;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .divHeader .patrick {
@@ -101,14 +101,18 @@ i {
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
-  -webkit-transition: font-family 1s;
-  transition: font-family 1s;
+  -webkit-transition: font-family 0.75s;
+  transition: font-family 0.75s;
+}
+
+.divHeader .moi {
+  width: 200px;
+  height: 200px;
 }
 
 .divHeader .moi .imgmoi {
-  margin: auto;
-  min-height: 100px;
-  min-width: 80px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   -webkit-box-shadow: inset 0px 0px 5px 0px #828282, 0px 0px 5px 5px rgba(196, 196, 196, 0.8);
           box-shadow: inset 0px 0px 5px 0px #828282, 0px 0px 5px 5px rgba(196, 196, 196, 0.8);
@@ -119,7 +123,7 @@ i {
   margin-bottom: 1%;
 }
 
-.divHeader .detailsgrid {
+.divHeader .detailsflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,20 +134,17 @@ i {
       flex-wrap: wrap;
 }
 
-.divHeader .detailsgrid details {
+.divHeader .detailsflex details {
   width: 400px;
   margin: 0em 0.5em;
   padding: 1em;
   text-align: center;
   text-decoration: none;
-
   border: 1px solid transparent;
   border-radius: 10px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
-.divHeader .detailsgrid details h4, .divHeader .detailsgrid details ul, .divHeader .detailsgrid details li {
+.divHeader .detailsflex details h4, .divHeader .detailsflex details ul, .divHeader .detailsflex details li {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -151,7 +152,7 @@ i {
   list-style: none;
 }
 
-.divHeader .detailsgrid details summary {
+.divHeader .detailsflex details summary {
   list-style: none;
   padding: 10px;
   margin: 10px;
@@ -162,11 +163,19 @@ i {
           transition-duration: 0.5s;
 }
 
-.divHeader .detailsgrid details summary:hover {
-
+.divHeader .detailsflex details summary:hover {
   background: white;
   -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
           box-shadow: inset 0px 0px 10px 2px #656565;
+}
+
+.ct {
+  text-decoration: none;
+  color: black;
+}
+
+.ct:hover {
+  color: #43adb3;
 }
 
 .divPresentation {
@@ -269,12 +278,7 @@ i {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "projet1 projet1"
- "projet2 projet2"
- "projet3 projet3"
- "projet4 projet4"
- "projet5 projet5"
- "projet6 projet6";
+      grid-template-areas: "projet1 projet1" "projet2 projet2" "projet3 projet3" "projet4 projet4" "projet5 projet5" "projet6 projet6";
   grid-gap: 10px;
 }
 
@@ -349,6 +353,7 @@ i {
 }
 
 .flexlink {
+  color: black;
   margin: 5em 0em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,11 +363,21 @@ i {
   list-style: none;
 }
 
-.flexlink i {
-  font-size: 3em;
+.flexlink li .alink {
+  text-decoration: none;
   color: black;
 }
 
+.flexlink li .alink i {
+  color: black;
+  font-size: 3em;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.flexlink li .alink i:hover {
+  color: #43adb3;
+}
 
 .flexcv {
   display: -webkit-box;
@@ -393,13 +408,12 @@ i {
   background: white;
   -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
           box-shadow: inset 0px 0px 10px 2px #656565;
-
 }
 
 .bodyBackground {
   background: #2f2f2f;
   background: url("../img/black.jpg") repeat fixed 100%;
-  color: white;
+  color: #e6e6e6;
 }
 
 .bodyBackground .navbar {
@@ -417,8 +431,6 @@ i {
 }
 
 .bodyBackground .cv {
-
-
   background: #2f2f2f;
 }
 
@@ -428,27 +440,33 @@ i {
           box-shadow: 0px 0px 10px 2px #656565, inset 0px 0px 10px 2px #656565;
 }
 
+.bodyBackground .ct {
+  color: #e6e6e6;
+}
+
+.bodyBackground .ct:hover {
+  color: #43adb3;
+}
+
 .bodyBackground .divHeader {
   background: #2f2f2f;
 }
 
 .bodyBackground .divPresentation {
   border-radius: 0px;
-  -webkit-box-shadow: inset 0px 0px 10px 0px gray,
- 0px 0px 10px 0px gray;
-          box-shadow: inset 0px 0px 10px 0px gray,
- 0px 0px 10px 0px gray;
+  -webkit-box-shadow: inset 0px 0px 10px 0px gray, 0px 0px 10px 0px gray;
+          box-shadow: inset 0px 0px 10px 0px gray, 0px 0px 10px 0px gray;
   -webkit-transition: border-radius 1s;
   transition: border-radius 1s;
 }
 
 .bodyBackground .flexcv .cv {
   border: 1px solid #2f2f2f;
-  color: white;
+  color: #e6e6e6;
 }
 
 .bodyBackground .skills img {
-  background: white;
+  background: #e6e6e6;
   border-radius: 2em;
   -webkit-box-shadow: inset 0px 0px 20px 2px #a7a7a7;
           box-shadow: inset 0px 0px 20px 2px #a7a7a7;
@@ -459,17 +477,29 @@ i {
   max-height: 15em;
   margin: -0.5em;
   border-radius: 10em;
-  -webkit-box-shadow: inset 0px 0px 20px 2px #a7a7a7, 0px 0px 20px 1px white;
-          box-shadow: inset 0px 0px 20px 2px #a7a7a7, 0px 0px 20px 1px white;
+  -webkit-box-shadow: inset 0px 0px 20px 2px #a7a7a7, 0px 0px 20px 1px #e6e6e6;
+          box-shadow: inset 0px 0px 20px 2px #a7a7a7, 0px 0px 20px 1px #e6e6e6;
 }
 
-.bodyBackground .flexlink i {
-  color: white;
+.bodyBackground .flexlink {
+  color: #e6e6e6;
+}
+
+.bodyBackground .flexlink li .alink {
+  color: #e6e6e6;
+}
+
+.bodyBackground .flexlink li .alink i {
+  color: #e6e6e6;
+}
+
+.bodyBackground .flexlink li .alink i:hover {
+  color: #43adb3;
 }
 
 .bodyBackground summary:hover {
   color: black;
-  background: white;
+  background: #e6e6e6;
   -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
           box-shadow: inset 0px 0px 10px 2px #656565;
 }

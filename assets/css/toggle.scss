@@ -3,7 +3,7 @@
 .bodyBackground{
      background: rgb(47, 47, 47);
      background: url("../img/black.jpg") repeat fixed 100%;
-     color: white;
+     color: rgb(230, 230, 230);
 
      .navbar{
           background: rgb(47, 47, 47);
@@ -28,6 +28,13 @@
           }
      }
 
+     .ct{
+          color: rgb(230, 230, 230);
+          &:hover{
+               color: rgb(67, 173, 179);
+          }
+     }
+
      .divHeader {
           background: rgb(47, 47, 47);
      }
@@ -42,14 +49,14 @@
      .flexcv{
           .cv { 
                border: 1px solid rgb(47, 47, 47);        
-               color: white;
+               color: rgb(230, 230, 230);
           }
      }
 
      .skills {
 
           img {
-               background: white;
+               background: rgb(230, 230, 230);
                border-radius: 2em;              
                box-shadow: inset 0px 0px 20px 2px rgb(167, 167, 167);
 
@@ -59,16 +66,25 @@
                     margin: -0.5em;
                     border-radius: 10em;  
                     box-shadow: inset 0px 0px 20px 2px rgb(167, 167, 167),
-                                      0px 0px 20px 1px white;            
+                                      0px 0px 20px 1px rgb(230, 230, 230);            
                }
           }
      }
 
      .flexlink {
-    
-          i{
 
-               color: white
+          color: rgb(230, 230, 230);
+    
+          li .alink {
+
+               color: rgb(230, 230, 230);         
+               
+               i{
+                    color: rgb(230, 230, 230);   
+                    &:hover{
+                         color: rgb(67, 173, 179);
+                    }             
+               }
           }
      }
 
@@ -76,7 +92,7 @@
 
           &:hover{
                color: black;
-               background: white;
+               background: rgb(230, 230, 230);
                box-shadow: inset 0px 0px 10px 2px rgb(101, 101, 101);
           }
      }
