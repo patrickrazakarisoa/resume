@@ -136,6 +136,7 @@ i {
   padding: 1em;
   text-align: center;
   text-decoration: none;
+
   border: 1px solid transparent;
   border-radius: 10px;
   -webkit-transition-duration: 1s;
@@ -162,6 +163,7 @@ i {
 }
 
 .divHeader .detailsgrid details summary:hover {
+
   background: white;
   -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
           box-shadow: inset 0px 0px 10px 2px #656565;
@@ -267,7 +269,12 @@ i {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "projet1 projet1" "projet2 projet2" "projet3 projet3" "projet4 projet4" "projet5 projet5" "projet6 projet6";
+      grid-template-areas: "projet1 projet1"
+ "projet2 projet2"
+ "projet3 projet3"
+ "projet4 projet4"
+ "projet5 projet5"
+ "projet6 projet6";
   grid-gap: 10px;
 }
 
@@ -356,6 +363,7 @@ i {
   color: black;
 }
 
+
 .flexcv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,5 +393,6 @@ i {
   background: white;
   -webkit-box-shadow: inset 0px 0px 10px 2px #656565;
           box-shadow: inset 0px 0px 10px 2px #656565;
+
 }
 /*# sourceMappingURL=style.css.map */
