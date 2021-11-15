@@ -2,20 +2,6 @@ body {
   margin-top: 4em;
 }
 
-.moi {
-  margin: auto;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  min-height: 300px;
-  min-width: 300px;
-  border-radius: 50%;
-  background-image: url("../img/moi.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
-          box-shadow: inset 0px 0px 20px 0px #828282, 0px 0px 50px 5px rgba(196, 196, 196, 0.8);
-}
-
 .patrick {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-top: 4em;
@@ -78,5 +64,32 @@ body {
 
 .grid {
       grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
+}
+
+.flexMe .flexMoi {
+  margin-top: 10em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexMe .flexMoi .moi .imgmoi {
+  border-radius: 50%;
+}
+
+.flexMe .flexMoi .nom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  margin-bottom: 10em;
 }
 /*# sourceMappingURL=desktop.css.map */
