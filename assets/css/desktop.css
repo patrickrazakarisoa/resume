@@ -66,6 +66,38 @@ body {
       grid-template-areas: "projet1 ." ". projet2" "projet3 ." ". projet4" "projet5 ." ". projet6";
 }
 
+.grid div {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 500px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.grid div img {
+  margin: 5% 0px 5% 0px;
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.grid div .details {
+  padding: 20px;
+  border: wheat solid;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.grid div:hover .details {
+  padding: 20px;
+  border: wheat solid;
+  border-radius: 20px;
+  opacity: 1;
+}
+
 .flexMe .flexMoi {
   margin-top: 10em;
   -webkit-box-orient: horizontal;

@@ -27,10 +27,13 @@ if(localStorage.getItem('theme')) {
           modeSombre();
      }
 }
+
 function modeSombre() {
      document.body.className = 'bodyBackground';
      localStorage.setItem('theme', 'sombre');
+     icon.src = "assets/img/sun.png"; 
 }
+
 bodyBg.addEventListener("click", () => {
      if(document.body.classList.contains('bodyBackground')) {
           // Mode clair
@@ -39,5 +42,11 @@ bodyBg.addEventListener("click", () => {
      } else {
           // Mode sombre
           modeSombre();
+     }
+
+     if(document.body.classList.contains("bodyBackground")){
+          icon.src = "assets/img/sun.png";
+     } else {
+          icon.src = "assets/img/night.png";
      }
 })

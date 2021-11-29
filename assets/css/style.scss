@@ -7,12 +7,16 @@
 
 @mixin divBig() {
      height: auto;
-     width: 90%;
+     width: 80%;
      min-width: 300px;
      margin: auto;
      margin-top: 2em;
      margin-bottom: 2em;
-     padding: 2em;
+     padding: 1em;
+}
+
+#icon{
+     width: 30px;
 }
 
 
@@ -20,6 +24,12 @@ body{
      background: url("../img/white.jpg") repeat fixed 100%;
      transition: all 1s ease-in-out;
      margin-top: 0em;
+}
+
+a{
+     text-decoration: none;
+     color: black;
+
 }
 
 
@@ -179,6 +189,8 @@ i {
 
 .divPresentation{
 
+     margin: auto;
+
      @include divBig();
      border: none;
      border-radius: 10px;
@@ -239,6 +251,42 @@ i {
 
 .grid {
 
+     div{
+          margin: auto;
+          margin-top: 5%;
+          margin-bottom: 5%;
+          height: auto;
+          width: auto;
+          border-radius: 10px;
+
+          img{
+               margin: 5% 0px 5% 0px;
+               width: 100%;
+               height: 45%;
+               border-radius: 10px;
+          }
+
+          .details{
+               padding: 20px;
+               margin-bottom: 5%;
+               border: wheat solid;
+               border-radius: 20px;
+               opacity: 1;
+               transition: all 0.5s ease-in-out;
+          }
+
+          &:hover{
+               .details{
+                    padding: 20px;
+                    border: wheat solid;
+                    border-radius: 20px;
+                    opacity: 1;
+                    
+               }
+
+          }
+     }
+
      height: auto;
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -253,16 +301,24 @@ i {
      grid-gap: 10px;
 
      div {
-          border: wheat solid;
+          // border: wheat solid;
           padding: 2em;
           text-align: center;
+          box-shadow: 0px 0px 10px 10px rgb(218, 218, 218);
 
           &:nth-child(even) {
-               background-color: rgb(121, 55, 55);
+               background-color:#ffffff;
+               .details{
+                    
+                    background-color: #eaeaea;
+               }
           }
      
           &:nth-child(odd) {
-               background-color: steelblue;
+               background-color: #eaeaea;
+               .details{
+                    background-color: #ffffff;
+               }
           }
      }
 
